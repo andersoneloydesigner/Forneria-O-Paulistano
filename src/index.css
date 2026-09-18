@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-paulistano-red: #ff4d4d;
+    --color-paulistano-cream: #f9f8ed;
+    --color-paulistano-dark: #1e1e1e;
+    --color-paulistano-black: #141414;
+    --color-paulistano-sand: #f0eee2;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-paulistano-dark);
+    color: var(--color-paulistano-cream);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-stretch: normal;
+  }
+}
+
+/* 
+  EXACTLY 2 FONT STYLES:
+  1. Bebas Neue (impactful, condensed urban Paulistano typography) for all titles and headings
+  2. Outfit for body and descriptive text
+*/
+.font-title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  letter-spacing: 0.04em;
+  font-stretch: normal;
+}
+
+.font-body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-size-title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 46px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+.font-size-sub {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+
+.font-size-body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem; /* 16px */
+  line-height: 1.6;
+}
+
+/* Smooth scrolling and transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d4d;
+}
