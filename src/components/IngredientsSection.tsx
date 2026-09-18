@@ -35,7 +35,7 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
   ];
 
   return (
-    <section id="ingredientes" className="bg-[#f9f8ed] text-[#1e1e1e] py-28 lg:py-36 relative">
+    <section id="ingredientes" className="bg-[#000000] text-[#f9f8ed] py-28 lg:py-36 relative border-t border-[#1e1e1e]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header with generous spacing */}
@@ -43,10 +43,10 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
           <div className="font-size-body tracking-[0.2em] uppercase font-bold text-[#ff4d4d] mb-3">
             Mestria Gastronômica
           </div>
-          <h2 className="font-title font-size-title font-bold text-[#1e1e1e] tracking-normal">
+          <h2 className="font-title font-size-title font-bold text-[#f9f8ed] tracking-normal">
             Ingredientes Artesanais de Alta Qualidade.
           </h2>
-          <p className="font-size-sub text-[#1e1e1e]/85 mt-4 font-normal leading-relaxed">
+          <p className="font-size-sub text-[#f9f8ed]/85 mt-4 font-normal leading-relaxed">
             Para nós, cada detalhe importa. Uma grande pizza nasce da seleção criteriosa de quem respeita a procedência e o frescor da matéria-prima.
           </p>
           <div className="w-20 h-1 bg-[#ff4d4d] mt-6" />
@@ -57,25 +57,25 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
           {ingredients.map((item, index) => (
             <div
               key={index}
-              className="bg-[#ffffff] p-8 rounded-2xl border border-[#e5e2cf] shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full"
+              className="bg-[#141414] p-8 rounded-2xl border border-[#2a2a2a] shadow-lg hover:border-[#3d3d3d] transition-colors duration-300 flex flex-col justify-between h-full"
             >
               <div>
                 <div className="font-size-body uppercase tracking-wider font-bold text-[#ff4d4d] mb-2">
                   {item.highlight}
                 </div>
-                <h3 className="font-title font-size-sub font-bold text-[#1e1e1e] mb-2">
+                <h3 className="font-title font-size-sub font-bold text-[#f9f8ed] mb-2">
                   {item.title}
                 </h3>
-                <div className="font-size-body font-medium text-[#1e1e1e]/70 mb-4 pb-3 border-b border-[#f0eee2]">
+                <div className="font-size-body font-medium text-[#f9f8ed]/70 mb-4 pb-3 border-b border-[#262626]">
                   {item.subtitle}
                 </div>
-                <p className="font-size-body text-[#1e1e1e]/80 leading-relaxed">
+                <p className="font-size-body text-[#f9f8ed]/80 leading-relaxed">
                   {item.description}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-[#f0eee2] flex items-center justify-between">
-                <span className="font-size-body text-[#1e1e1e]/50">
+              <div className="mt-6 pt-4 border-t border-[#262626] flex items-center justify-between">
+                <span className="font-size-body text-[#f9f8ed]/50">
                   Pilar 0{index + 1}
                 </span>
                 <span className="w-2 h-2 rounded-full bg-[#ff4d4d]" />
@@ -85,7 +85,7 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
         </div>
 
         {/* Sensory quote banner */}
-        <div className="mt-20 p-8 md:p-12 rounded-2xl bg-[#1e1e1e] text-[#f9f8ed] flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-20 p-8 md:p-12 rounded-2xl bg-[#141414] border border-[#2a2a2a] text-[#f9f8ed] flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <div className="font-title font-size-sub font-bold text-[#f9f8ed]">
               Recheios generosos, sabor marcante e massa leve.

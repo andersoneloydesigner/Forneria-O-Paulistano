@@ -1,6 +1,6 @@
 export default function CommitmentSection() {
   return (
-    <section id="compromisso" className="bg-[#ffffff] text-[#1e1e1e] py-20 lg:py-28">
+    <section id="compromisso" className="bg-[#f9f8ed] text-[#1e1e1e] py-20 lg:py-28 border-b border-[#e8e4d3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-xl xl:max-w-2xl mb-14">
@@ -21,7 +21,7 @@ export default function CommitmentSection() {
           {/* Pillar 1 */}
           <div className="bg-[#141414] text-[#f9f8ed] p-8 sm:p-9 rounded-2xl border border-[#2a2a2a] shadow-xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
             <div>
-              <h3 className="font-title text-[#ff4d4d] text-3xl sm:text-4xl tracking-wide mb-3">
+              <h3 className="font-title text-[#ff4d4d] text-2xl sm:text-3xl tracking-tight mb-3">
                 Massa Leve & Crocante
               </h3>
               <p className="font-size-body text-[#f9f8ed]/80 leading-relaxed">
@@ -33,7 +33,7 @@ export default function CommitmentSection() {
           {/* Pillar 2 */}
           <div className="bg-[#141414] text-[#f9f8ed] p-8 sm:p-9 rounded-2xl border border-[#2a2a2a] shadow-xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
             <div>
-              <h3 className="font-title text-[#ff4d4d] text-3xl sm:text-4xl tracking-wide mb-3">
+              <h3 className="font-title text-[#ff4d4d] text-2xl sm:text-3xl tracking-tight mb-3">
                 Recheios Generosos
               </h3>
               <p className="font-size-body text-[#f9f8ed]/80 leading-relaxed">
@@ -45,7 +45,7 @@ export default function CommitmentSection() {
           {/* Pillar 3 */}
           <div className="bg-[#141414] text-[#f9f8ed] p-8 sm:p-9 rounded-2xl border border-[#2a2a2a] shadow-xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
             <div>
-              <h3 className="font-title text-[#ff4d4d] text-3xl sm:text-4xl tracking-wide mb-3">
+              <h3 className="font-title text-[#ff4d4d] text-2xl sm:text-3xl tracking-tight mb-3">
                 Entrega Rápida & Eficiente
               </h3>
               <p className="font-size-body text-[#f9f8ed]/80 leading-relaxed">

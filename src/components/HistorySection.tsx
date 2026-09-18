@@ -2,49 +2,49 @@ export default function HistorySection() {
   return (
     <>
       {/* SEÇÃO 1: A TRADIÇÃO DA PIZZA & ALMA PAULISTANA */}
-      <section id="historia" className="bg-[#f9f8ed] text-[#1e1e1e] py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="historia" className="bg-[#000000] text-[#f9f8ed] py-16 lg:py-20 border-t border-[#1e1e1e] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          {/* Grid: Left Text Column (Header + Story) + Right Pizza Image */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Grid: Left Pizza Image (60%) + Right Text Column (40%) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Story Text Column: Header + Narrative */}
-            <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
+            {/* Pizza Image Showcase (60% width) on Left */}
+            <div className="lg:col-span-7 order-2 lg:order-1 flex items-center justify-center relative z-10">
+              <div className="relative w-full flex items-center justify-center">
+                <img
+                  src="https://raw.githubusercontent.com/andersoneloydesigner/arquivos-opaulistano/2ebd837cc6407e4ba565d8ec0ccc48bbac57700c/pizza-menina.png"
+                  alt="Tradição da pizza paulistana e paixão compartilhada"
+                  className="w-full h-auto max-w-[550px] sm:max-w-[620px] lg:max-w-[700px] xl:max-w-[750px] object-contain transform hover:scale-[1.02] transition-transform duration-700 filter drop-shadow-[0_35px_65px_rgba(0,0,0,0.95)] select-none"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
+
+            {/* Story Text Column (40% width) on Right */}
+            <div className="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-center space-y-6 z-10">
               
               <div>
                 <div className="font-size-body tracking-[0.2em] uppercase font-bold text-[#ff4d4d] mb-1.5">
                   Seu Pedaço de São Paulo · Tradição de Raiz
                 </div>
-                <h2 className="font-title font-size-title font-bold text-[#1e1e1e] tracking-normal max-w-md">
+                <h2 className="font-title font-size-title font-bold text-[#f9f8ed] tracking-normal max-w-md">
                   A Autêntica Paixão Pela Pizza Paulistana.
                 </h2>
                 <div className="w-20 h-1 bg-[#ff4d4d] mt-3" />
               </div>
 
-              <p className="font-size-sub text-[#1e1e1e] font-semibold leading-relaxed">
+              <p className="font-size-sub text-[#f9f8ed] font-semibold leading-relaxed">
                 Sempre fomos apaixonados pela alma e pelo ritmo de São Paulo Capital – e, claro, pela sua{' '}
                 <span className="text-[#ff4d4d]">tradição inabalável de pizza</span>.
               </p>
 
-              <p className="font-size-body text-[#1e1e1e]/85 leading-relaxed">
+              <p className="font-size-body text-[#f9f8ed]/85 leading-relaxed">
                 Para um paulistano de raiz, pizza não é apenas uma refeição rápida: é um ritual sagrado de sabor, massa no ponto certo, ingredientes selecionados e muita agilidade no preparo.
               </p>
 
-              <p className="font-size-body text-[#1e1e1e]/85 leading-relaxed">
+              <p className="font-size-body text-[#f9f8ed]/85 leading-relaxed">
                 Essa herança forjada nos bairros tradicionais da capital paulista é a essência viva que colocamos em cada disco de massa que sai do nosso forno a lenha.
               </p>
-            </div>
-
-            {/* Pizza Image Showcase */}
-            <div className="lg:col-span-6 flex items-center justify-center relative">
-              <div className="relative w-full flex items-center justify-center">
-                <img
-                  src="https://opaulistano.b-cdn.net/pizza.png"
-                  alt="Autêntica pizza artesanal da Forneria O Paulistano assada no forno a lenha"
-                  className="w-full h-auto max-w-[620px] lg:max-w-none object-contain transform hover:scale-105 transition-transform duration-700 filter drop-shadow-[0_30px_45px_rgba(0,0,0,0.22)] z-10"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
             </div>
 
           </div>

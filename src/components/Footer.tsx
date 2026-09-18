@@ -9,7 +9,7 @@ export default function Footer() {
           <img
             src="https://opaulistano.b-cdn.net/logo-final-o-paulistano_fundo%20escuro%20sem%20slogan.png"
             alt="Forneria O Paulistano"
-            className="h-16 md:h-20 w-auto object-contain mb-4"
+            className="h-44 sm:h-56 md:h-64 lg:h-72 w-auto max-w-[90vw] md:max-w-[560px] lg:max-w-[640px] object-contain mb-8 filter drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)] select-none"
             referrerPolicy="no-referrer"
           />
           

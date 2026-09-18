@@ -19,22 +19,21 @@
   }
 
   h1, h2, h3, h4, .font-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    font-stretch: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 }
 
 /* 
-  EXACTLY 2 FONT STYLES:
-  1. Bebas Neue (impactful, condensed urban Paulistano typography) for all titles and headings
+  TYPOGRAPHY SYSTEM:
+  1. Ubuntu (clean, bold, modern) for all titles and headings
   2. Outfit for body and descriptive text
 */
 .font-title {
-  font-family: 'Bebas Neue', sans-serif !important;
-  letter-spacing: 0.04em;
-  font-stretch: normal;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .font-body {
@@ -42,10 +41,11 @@
 }
 
 .font-size-title {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 46px;
-  line-height: 1.1;
-  letter-spacing: 0.04em;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
 }
 
 .font-size-sub {

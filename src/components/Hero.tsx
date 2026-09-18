@@ -50,15 +50,15 @@ export default function Hero({ onOrderClick }: HeroProps) {
           <div className="lg:col-span-6 flex flex-col justify-center items-start z-10 space-y-6 max-w-xl xl:max-w-2xl">
             
             <div className="space-y-5 w-full">
-              {/* Main Headline with Bebas Neue font */}
+              {/* Main Headline with Ubuntu font */}
               <h1
                 id="hero-headline"
-                className="font-title text-[#f9f8ed] max-w-xl xl:max-w-2xl tracking-normal"
+                className="text-[#f9f8ed] max-w-xl xl:max-w-2xl tracking-normal font-bold"
                 style={{
-                  fontFamily: "'Bebas Neue', sans-serif",
-                  fontSize: '64px',
-                  lineHeight: '1.04',
-                  letterSpacing: '0.03em',
+                  fontFamily: "'Ubuntu', sans-serif",
+                  fontSize: '52px',
+                  fontWeight: 700,
+                  lineHeight: '1.15',
                 }}
               >
                 A autêntica tradição da pizza paulistana no{' '}
