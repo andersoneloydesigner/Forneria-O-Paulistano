@@ -34,7 +34,7 @@ export default function OrderModal({
       (notes ? `*Observações:* ${encodeURIComponent(notes)}%0A` : '') +
       `%0APoderiam me confirmar o tempo estimado? Muito obrigado!`;
 
-    window.open(`https://wa.me/5548999999999?text=${text}`, '_blank');
+    window.open(`https://wa.me/5548991897510?text=${text}`, '_blank');
     onClose();
   };
 
@@ -53,7 +53,7 @@ export default function OrderModal({
               Forneria O Paulistano
             </span>
             <h3 className="font-title font-size-sub font-bold text-[#f9f8ed] mt-1 tracking-normal">
-              Fazer Pedido no Forno a Lenha
+              Fazer Pedido via WhatsApp
             </h3>
           </div>
           <button
@@ -99,8 +99,8 @@ export default function OrderModal({
               <option value="Burrata ao Pesto & Parma">
                 Burrata ao Pesto & Parma
               </option>
-              <option value="Banana com Canela Forneira (Doce)">
-                Banana com Canela Forneira (Doce)
+              <option value="Banana com Canela & Açúcar (Doce)">
+                Banana com Canela & Açúcar (Doce)
               </option>
               <option value="Quero consultar o cardápio completo no WhatsApp">
                 Outro sabor / Consultar no WhatsApp

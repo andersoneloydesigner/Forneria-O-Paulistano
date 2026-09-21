@@ -25,7 +25,7 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
 
   const navLinks = [
     { label: 'Nossa História', href: '#historia' },
-    { label: 'Forno a Lenha', href: '#forno' },
+    { label: 'Nossa Massa', href: '#massa' },
     { label: 'Ingredientes', href: '#ingredientes' },
     { label: 'Localização', href: '#localizacao' },
   ];

@@ -48,9 +48,9 @@ export default function App() {
         <HistorySection />
 
         {/* 
-          Forno a Lenha Tradicional:
-          Alta temperatura (450°C), aroma da lenha nobre,
-          crocância e alvéolos.
+          Massa Artesanal de Longa Fermentação:
+          Fermentação 48h a 72h, alta digestibilidade,
+          crocância e alvéolos perfeitos.
         */}
         <WoodOvenSection />
 

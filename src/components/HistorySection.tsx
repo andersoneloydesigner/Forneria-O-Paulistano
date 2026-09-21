@@ -43,7 +43,7 @@ export default function HistorySection() {
               </p>
 
               <p className="font-size-body text-[#f9f8ed]/85 leading-relaxed">
-                Essa herança forjada nos bairros tradicionais da capital paulista é a essência viva que colocamos em cada disco de massa que sai do nosso forno a lenha.
+                Essa herança forjada nos bairros tradicionais da capital paulista é a essência viva que colocamos em cada disco de pizza que sai da nossa cozinha artesanal.
               </p>
             </div>
 

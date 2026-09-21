@@ -52,16 +52,16 @@ export default function LocationSection({ onOrderClick }: LocationSectionProps) 
               </p>
             </div>
 
-            {/* Delivery Channels */}
+            {/* Channels & WhatsApp */}
             <div className="p-7 rounded-2xl bg-[#1e1e1e] border border-[#2e2e2e] flex-1 flex flex-col justify-center">
               <h3 className="font-title font-size-sub font-bold text-[#f9f8ed] mb-1">
-                Canais de Atendimento
+                WhatsApp & Atendimento
               </h3>
-              <p className="font-size-body text-[#f9f8ed]/80 font-medium">
-                WhatsApp Direto & Retirada
+              <p className="font-size-body text-[#ff4d4d] font-bold">
+                +55 (48) 99189-7510
               </p>
               <p className="font-size-body text-[#f9f8ed]/60 mt-1">
-                Massa crocante que chega quentinha na sua mesa.
+                Atendimento direto via WhatsApp e retirada no balcão.
               </p>
             </div>
 
@@ -80,11 +80,11 @@ export default function LocationSection({ onOrderClick }: LocationSectionProps) 
             </span>
 
             <h3 className="font-title font-size-title font-bold text-[#f9f8ed] mb-4 tracking-normal">
-              Deseja uma autêntica pizza no forno a lenha hoje?
+              Deseja uma autêntica pizza paulistana hoje?
             </h3>
 
             <p className="font-size-body text-[#f9f8ed]/80 max-w-md mb-8 leading-relaxed">
-              Inicie seu atendimento no WhatsApp. Enviamos o cardápio atualizado e preparamos a sua pizza com o cuidado artesanal que você merece.
+              Inicie seu atendimento no WhatsApp (+55 48 99189-7510). Enviamos o cardápio atualizado e preparamos a sua pizza com o cuidado artesanal que você merece.
             </p>
 
             {/* Action button strictly without icon as requested: 'tire o ícone dos botões' */}
@@ -93,13 +93,13 @@ export default function LocationSection({ onOrderClick }: LocationSectionProps) 
               onClick={onOrderClick}
               className="font-size-body inline-flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] px-10 py-4 rounded-full font-bold tracking-wide transition-all duration-200 shadow-xl shadow-[#ff4d4d]/30 active:scale-95 cursor-pointer w-full sm:w-auto"
             >
-              Chamar no WhatsApp
+              Chamar no WhatsApp (+55 48 99189-7510)
             </button>
 
             <div className="mt-6 flex items-center gap-4 font-size-body text-[#f9f8ed]/60">
               <span>Entrega rápida</span>
               <span>•</span>
-              <span>Forno tradicional</span>
+              <span>Massa 48h</span>
               <span>•</span>
               <span>Praia do Sonho</span>
             </div>

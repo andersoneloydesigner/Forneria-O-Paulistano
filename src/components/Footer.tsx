@@ -15,7 +15,7 @@ export default function Footer() {
           
           <div className="max-w-md text-center">
             <p className="font-size-body text-[#f9f8ed]/70">
-              A autêntica forneria paulistana na Grande Florianópolis. Massa de longa fermentação, ingredientes nobres e forno a lenha tradicional.
+              A autêntica forneria paulistana na Grande Florianópolis. Massa de longa fermentação, receitas tradicionais e ingredientes nobres.
             </p>
           </div>
 
@@ -30,12 +30,12 @@ export default function Footer() {
             </a>
             <span>•</span>
             <a
-              href="https://wa.me/5548999999999"
+              href="https://wa.me/5548991897510?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Forneria%20O%20Paulistano."
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#ff4d4d] transition-colors"
+              className="hover:text-[#ff4d4d] transition-colors font-semibold text-[#ff4d4d]"
             >
-              WhatsApp
+              WhatsApp (+55 48 99189-7510)
             </a>
           </div>
         </div>
@@ -53,10 +53,13 @@ export default function Footer() {
 
           <div>
             <div className="font-title font-size-sub font-bold text-[#f9f8ed] mb-2">
-              Localização
+              Localização & Contato
             </div>
             <p className="font-size-body text-[#f9f8ed]/70">
               Praia do Sonho · Palhoça, SC
+            </p>
+            <p className="font-size-body text-[#ff4d4d] font-bold mt-1">
+              WhatsApp: +55 (48) 99189-7510
             </p>
             <p className="font-size-body text-[#f9f8ed]/60 mt-1">
               Atendimento de Terça a Domingo, 18h30 - 23h30
@@ -65,10 +68,10 @@ export default function Footer() {
 
           <div>
             <div className="font-title font-size-sub font-bold text-[#f9f8ed] mb-2">
-              Padrão Forneiro
+              Padrão de Qualidade
             </div>
             <p className="font-size-body text-[#f9f8ed]/70">
-              Forno a lenha a 450°C · Fermentação natural 48h · Catupiry® legítimo
+              Fermentação natural lenta 48h · Farinha nobre · Catupiry® legítimo
             </p>
           </div>
         </div>

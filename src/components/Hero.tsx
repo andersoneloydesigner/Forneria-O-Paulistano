@@ -61,9 +61,9 @@ export default function Hero({ onOrderClick }: HeroProps) {
                   lineHeight: '1.15',
                 }}
               >
-                A autêntica tradição da pizza paulistana no{' '}
+                A autêntica tradição da pizza paulistana com{' '}
                 <span className="text-[#ff4d4d]">
-                  forno a lenha
+                  massa de longa fermentação
                 </span>.
               </h1>
 
@@ -73,7 +73,7 @@ export default function Hero({ onOrderClick }: HeroProps) {
                 className="text-[#f9f8ed]/90 max-w-lg xl:max-w-xl font-normal leading-relaxed"
                 style={{ fontSize: '24px' }}
               >
-                Massa de fermentação lenta 48h, ingredientes artesanais nobres e o calor das chamas que consagrou a metrópole, agora na Praia do Sonho.
+                Massa de fermentação lenta 48h, ingredientes artesanais nobres e a autêntica receita que consagrou a metrópole, agora na Praia do Sonho.
               </p>
             </div>
 

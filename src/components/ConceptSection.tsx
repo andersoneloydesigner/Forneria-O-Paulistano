@@ -78,7 +78,7 @@ export default function ConceptSection() {
                 A Cor da Paixão
               </h3>
               <p className="font-size-body text-[#1e1e1e]/80 leading-relaxed">
-                Inspirado na cor oficial da bandeira do estado de São Paulo, o vermelho evoca o calor do forno a lenha, a intensidade do tomate maduro e o apetite por uma pizza de verdade.
+                Inspirado na cor oficial da bandeira do estado de São Paulo, o vermelho evoca o calor da nossa cozinha, a intensidade do tomate maduro e o apetite por uma pizza de verdade.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-[#f0eee2] font-size-body text-[#ff4d4d] font-semibold">
