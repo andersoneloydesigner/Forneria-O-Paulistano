@@ -1,6 +1,6 @@
 {
   "name": "Forneria O Paulistano",
-  "description": "Landing page oficial da Forneria O Paulistano em Palhoça, Santa Catarina: tradição da pizza paulistana em forno a lenha com ingredientes artesanais.",
+  "description": "Landing page oficial da Forneria O Paulistano em Palhoça, Santa Catarina: autêntica tradição da pizza paulistana com massa de longa fermentação e ingredientes nobres.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

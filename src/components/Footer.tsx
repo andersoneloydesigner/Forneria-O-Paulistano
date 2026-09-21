@@ -1,3 +1,6 @@
+import { Instagram } from 'lucide-react';
+import { WHATSAPP_LINK } from '../constants';
+
 export default function Footer() {
   return (
     <footer id="main-footer" className="bg-[#141414] text-[#f9f8ed] border-t border-[#262626] pt-16 pb-8">
@@ -19,23 +22,27 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="mt-6 flex items-center gap-6 font-size-body text-[#f9f8ed]/80">
+          {/* Social & Contact Icons */}
+          <div className="mt-8 flex items-center justify-center gap-4">
             <a
-              href="https://instagram.com"
+              id="footer-instagram-link"
+              href="https://www.instagram.com/opaulistanoforneria"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#ff4d4d] transition-colors"
+              aria-label="Instagram @opaulistanoforneria"
+              className="w-12 h-12 rounded-full bg-[#1e1e1e] border border-[#333333] flex items-center justify-center text-[#f9f8ed]/90 hover:text-white hover:bg-[#ff4d4d] hover:border-[#ff4d4d] transition-all duration-300 shadow-md hover:scale-110 active:scale-95 cursor-pointer"
             >
-              Instagram
+              <Instagram className="w-5 h-5" />
             </a>
-            <span>•</span>
             <a
-              href="https://wa.me/5548991897510?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Forneria%20O%20Paulistano."
+              id="footer-whatsapp-link"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#ff4d4d] transition-colors font-semibold text-[#ff4d4d]"
+              aria-label="WhatsApp Forneria O Paulistano (+55 48 99189-7510)"
+              className="w-12 h-12 rounded-full bg-[#1e1e1e] border border-[#333333] flex items-center justify-center text-[#f9f8ed]/90 hover:text-white hover:bg-[#ff4d4d] hover:border-[#ff4d4d] transition-all duration-300 shadow-md hover:scale-110 active:scale-95 cursor-pointer"
             >
-              WhatsApp (+55 48 99189-7510)
+              <i className="bi bi-whatsapp text-xl leading-none"></i>
             </a>
           </div>
         </div>
