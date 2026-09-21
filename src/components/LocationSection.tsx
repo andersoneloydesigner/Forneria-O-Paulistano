@@ -1,5 +1,7 @@
+import { WHATSAPP_LINK } from '../constants';
+
 interface LocationSectionProps {
-  onOrderClick: () => void;
+  onOrderClick?: () => void;
 }
 
 export default function LocationSection({ onOrderClick }: LocationSectionProps) {
@@ -88,13 +90,21 @@ export default function LocationSection({ onOrderClick }: LocationSectionProps) 
             </p>
 
             {/* Action button strictly without icon as requested: 'tire o ícone dos botões' */}
-            <button
+            <a
               id="location-order-btn"
-              onClick={onOrderClick}
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                if (onOrderClick) {
+                  e.preventDefault();
+                  onOrderClick();
+                }
+              }}
               className="font-size-body inline-flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] px-10 py-4 rounded-full font-bold tracking-wide transition-all duration-200 shadow-xl shadow-[#ff4d4d]/30 active:scale-95 cursor-pointer w-full sm:w-auto"
             >
               Chamar no WhatsApp (+55 48 99189-7510)
-            </button>
+            </a>
 
             <div className="mt-6 flex items-center gap-4 font-size-body text-[#f9f8ed]/60">
               <span>Entrega rápida</span>

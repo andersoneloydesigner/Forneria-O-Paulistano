@@ -1,3 +1,5 @@
+import { WHATSAPP_LINK } from '../constants';
+
 interface IngredientsSectionProps {
   onOrderClick?: () => void;
 }
@@ -94,14 +96,21 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
               Experimente a união perfeita do frescor catarinense com a alma gastronômica de São Paulo.
             </p>
           </div>
-          {onOrderClick && (
-            <button
-              onClick={onOrderClick}
-              className="font-size-body font-bold px-8 py-3.5 rounded-full bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] transition-colors shrink-0 shadow-lg cursor-pointer"
-            >
-              Pedir pelo WhatsApp
-            </button>
-          )}
+          <a
+            id="ingredients-order-btn"
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => {
+              if (onOrderClick) {
+                e.preventDefault();
+                onOrderClick();
+              }
+            }}
+            className="font-size-body font-bold px-8 py-3.5 rounded-full bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] transition-colors shrink-0 shadow-lg cursor-pointer text-center inline-flex items-center justify-center"
+          >
+            Pedir pelo WhatsApp
+          </a>
         </div>
 
       </div>

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Hero from './components/Hero';
 import CommitmentSection from './components/CommitmentSection';
 import HistorySection from './components/HistorySection';
@@ -7,19 +6,11 @@ import IngredientsSection from './components/IngredientsSection';
 import ConceptSection from './components/ConceptSection';
 import LocationSection from './components/LocationSection';
 import Footer from './components/Footer';
-import OrderModal from './components/OrderModal';
+import { WHATSAPP_LINK } from './constants';
 
 export default function App() {
-  const [orderModalOpen, setOrderModalOpen] = useState(false);
-  const [selectedPizza, setSelectedPizza] = useState('Paulistana Clássica');
-
-  const handleOpenOrder = (pizzaName?: string) => {
-    if (pizzaName) {
-      setSelectedPizza(pizzaName);
-    } else {
-      setSelectedPizza('Paulistana Clássica');
-    }
-    setOrderModalOpen(true);
+  const handleOpenWhatsApp = () => {
+    window.open(WHATSAPP_LINK, '_blank');
   };
 
   return (
@@ -32,7 +23,7 @@ export default function App() {
           Ao descer a página, transiciona para estilo claro.
           Sem ícones nos botões, título com Syne normal (sem achatar).
         */}
-        <Hero onOrderClick={() => handleOpenOrder()} />
+        <Hero onOrderClick={handleOpenWhatsApp} />
 
         {/* 
           Compromisso com a sua mesa:
@@ -59,7 +50,7 @@ export default function App() {
           Fermentação 48h, Tomates San Marzano, Catupiry® Legítimo,
           Queijos e embutidos nobres.
         */}
-        <IngredientsSection onOrderClick={() => handleOpenOrder()} />
+        <IngredientsSection onOrderClick={handleOpenWhatsApp} />
 
         {/* 
           Conceito da Marca:
@@ -71,18 +62,11 @@ export default function App() {
           Localização e Atendimento:
           Praia do Sonho, Palhoça / SC e pedidos via WhatsApp.
         */}
-        <LocationSection onOrderClick={() => handleOpenOrder()} />
+        <LocationSection onOrderClick={handleOpenWhatsApp} />
       </main>
 
       {/* Footer com logo oficial sem slogan e piso paulista */}
       <Footer />
-
-      {/* Modal de Pedido via WhatsApp (botões limpos sem ícones) */}
-      <OrderModal
-        isOpen={orderModalOpen}
-        onClose={() => setOrderModalOpen(false)}
-        preselectedPizza={selectedPizza}
-      />
     </div>
   );
 }

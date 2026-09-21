@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type MouseEvent } from 'react';
 import { Menu, X } from 'lucide-react';
+import { WHATSAPP_LINK } from '../constants';
 
 interface NavbarProps {
-  onOrderClick: () => void;
+  onOrderClick?: () => void;
 }
 
 export default function Navbar({ onOrderClick }: NavbarProps) {
@@ -29,6 +30,13 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
     { label: 'Ingredientes', href: '#ingredientes' },
     { label: 'Localização', href: '#localizacao' },
   ];
+
+  const handleOrder = (e: MouseEvent) => {
+    if (onOrderClick) {
+      e.preventDefault();
+      onOrderClick();
+    }
+  };
 
   return (
     <nav
@@ -85,9 +93,12 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
 
           {/* Desktop CTA Action Button (strictly NO icon as requested: 'tire o ícone dos botões') */}
           <div className="hidden md:flex items-center">
-            <button
+            <a
               id="navbar-order-btn"
-              onClick={onOrderClick}
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleOrder}
               className="inline-flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] rounded-full font-bold tracking-wide transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-[#ff4d4d]/20 active:scale-95 cursor-pointer text-center"
               style={{
                 width: '149.891px',
@@ -97,18 +108,21 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
               }}
             >
               Fazer Pedido
-            </button>
+            </a>
           </div>
 
           {/* Mobile hamburger button */}
           <div className="flex md:hidden items-center gap-3">
-            <button
+            <a
               id="mobile-nav-order-btn"
-              onClick={onOrderClick}
-              className="font-size-body bg-[#ff4d4d] text-[#f9f8ed] px-4 py-1.5 rounded-full font-bold text-sm active:scale-95 cursor-pointer"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleOrder}
+              className="font-size-body bg-[#ff4d4d] text-[#f9f8ed] px-4 py-1.5 rounded-full font-bold text-sm active:scale-95 cursor-pointer inline-flex items-center justify-center"
             >
               Pedir
-            </button>
+            </a>
             <button
               id="mobile-menu-toggle"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -147,16 +161,18 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
               {link.label}
             </a>
           ))}
-          <button
+          <a
             id="mobile-dropdown-order-btn"
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => {
               setMobileMenuOpen(false);
-              onOrderClick();
             }}
-            className="w-full mt-4 font-size-body flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] py-3 rounded-full font-bold tracking-wide cursor-pointer"
+            className="w-full mt-4 font-size-body flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] py-3 rounded-full font-bold tracking-wide cursor-pointer text-center"
           >
             Fazer Pedido via WhatsApp
-          </button>
+          </a>
         </div>
       )}
     </nav>

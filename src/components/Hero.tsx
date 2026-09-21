@@ -1,7 +1,8 @@
 import Navbar from './Navbar';
+import { WHATSAPP_LINK } from '../constants';
 
 interface HeroProps {
-  onOrderClick: () => void;
+  onOrderClick?: () => void;
 }
 
 export default function Hero({ onOrderClick }: HeroProps) {
@@ -79,13 +80,21 @@ export default function Hero({ onOrderClick }: HeroProps) {
 
             {/* CTA Button (strictly NO icons as requested: 'tire o ícone dos botões') */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
-              <button
+              <a
                 id="hero-order-btn"
-                onClick={onOrderClick}
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (onOrderClick) {
+                    e.preventDefault();
+                    onOrderClick();
+                  }
+                }}
                 className="font-size-body inline-flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] px-8 py-4 rounded-full font-bold tracking-wide transition-all duration-200 shadow-lg shadow-[#ff4d4d]/25 active:scale-95 cursor-pointer text-center"
               >
                 Pedir pelo WhatsApp
-              </button>
+              </a>
             </div>
 
           </div>
