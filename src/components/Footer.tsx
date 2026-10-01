@@ -69,7 +69,7 @@ export default function Footer() {
               WhatsApp: +55 (48) 99189-7510
             </p>
             <p className="font-size-body text-[#f9f8ed]/60 mt-1">
-              Atendimento de Terça a Domingo, 18h30 - 23h30
+              Atendimento de Terça a Domingo, 19h - 23h30
             </p>
           </div>
 

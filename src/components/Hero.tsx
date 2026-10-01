@@ -102,7 +102,7 @@ export default function Hero({ onOrderClick }: HeroProps) {
           {/* RIGHT COLUMN: Standalone Pizzaiolo Image positioned to the right with separation, enlarged without increasing hero vertical space */}
           <div className="lg:col-span-6 relative flex items-center justify-end z-10 w-full">
             <img
-              src="https://opaulistano.b-cdn.net/2155v5.png"
+              src="https://opaulistano.b-cdn.net/2155v6.png"
               alt="Mestre pizzaiolo da Forneria O Paulistano"
               className="ml-auto w-full max-w-[720px] sm:max-w-[840px] lg:max-w-[960px] xl:max-w-[1080px] 2xl:max-w-[1180px] lg:w-[125%] xl:w-[132%] -my-8 sm:-my-12 lg:-my-16 xl:-my-20 lg:-mr-12 xl:-mr-20 translate-x-[100px] h-auto object-contain block select-none transform hover:scale-[1.02] transition-transform duration-700 filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)]"
               referrerPolicy="no-referrer"

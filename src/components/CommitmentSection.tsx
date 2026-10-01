@@ -46,10 +46,10 @@ export default function CommitmentSection() {
           <div className="bg-[#141414] text-[#f9f8ed] p-8 sm:p-9 rounded-2xl border border-[#2a2a2a] shadow-xl flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
             <div>
               <h3 className="font-title text-[#ff4d4d] text-2xl sm:text-3xl tracking-tight mb-3">
-                Entrega Rápida & Eficiente
+                Entrega Grátis até 10km
               </h3>
               <p className="font-size-body text-[#f9f8ed]/80 leading-relaxed">
-                Logística dedicada e cuidadosa que respeita o seu tempo, garantindo que a sua pizza chegue perfeita e estalando à mesa.
+                Entrega gratuita em um raio de até 10km com logística dedicada e embalagem térmica, garantindo que a sua pizza chegue rápida, crocante e quentinha.
               </p>
             </div>
           </div>
