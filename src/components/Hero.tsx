@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import { WHATSAPP_LINK } from '../constants';
+import { DIGITAL_MENU_LINK } from '../constants';
 
 interface HeroProps {
   onOrderClick?: () => void;
@@ -40,7 +40,7 @@ export default function Hero({ onOrderClick }: HeroProps) {
       {/* Red ambient detail in bottom-left corner */}
       <div 
         className="absolute -bottom-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-[#ff4d4d]/35 via-[#ff4d4d]/15 to-transparent rounded-full blur-[110px] pointer-events-none z-[1]"
-        aria-hidden="true"
+        aria-hidden="true" 
       />
 
       {/* Main Hero Container with generous top and bottom height/margins */}
@@ -78,11 +78,11 @@ export default function Hero({ onOrderClick }: HeroProps) {
               </p>
             </div>
 
-            {/* CTA Button (strictly NO icons as requested: 'tire o ícone dos botões') */}
+            {/* CTA Button */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
               <a
                 id="hero-order-btn"
-                href={WHATSAPP_LINK}
+                href={DIGITAL_MENU_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => {
@@ -93,7 +93,7 @@ export default function Hero({ onOrderClick }: HeroProps) {
                 }}
                 className="font-size-body inline-flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] px-8 py-4 rounded-full font-bold tracking-wide transition-all duration-200 shadow-lg shadow-[#ff4d4d]/25 active:scale-95 cursor-pointer text-center"
               >
-                Pedir pelo WhatsApp
+                Acesse nosso cardápio digital
               </a>
             </div>
 

@@ -1,4 +1,4 @@
-import { WHATSAPP_LINK } from '../constants';
+import { DIGITAL_MENU_LINK } from '../constants';
 
 interface IngredientsSectionProps {
   onOrderClick?: () => void;
@@ -98,7 +98,7 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
           </div>
           <a
             id="ingredients-order-btn"
-            href={WHATSAPP_LINK}
+            href={DIGITAL_MENU_LINK}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => {
@@ -109,7 +109,7 @@ export default function IngredientsSection({ onOrderClick }: IngredientsSectionP
             }}
             className="font-size-body font-bold px-8 py-3.5 rounded-full bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] transition-colors shrink-0 shadow-lg cursor-pointer text-center inline-flex items-center justify-center"
           >
-            Pedir pelo WhatsApp
+            Acesse nosso cardápio digital
           </a>
         </div>
 

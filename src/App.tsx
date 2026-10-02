@@ -6,11 +6,11 @@ import IngredientsSection from './components/IngredientsSection';
 import ConceptSection from './components/ConceptSection';
 import LocationSection from './components/LocationSection';
 import Footer from './components/Footer';
-import { WHATSAPP_LINK } from './constants';
+import { DIGITAL_MENU_LINK } from './constants';
 
 export default function App() {
-  const handleOpenWhatsApp = () => {
-    window.open(WHATSAPP_LINK, '_blank');
+  const handleOpenDigitalMenu = () => {
+    window.open(DIGITAL_MENU_LINK, '_blank');
   };
 
   return (
@@ -19,11 +19,9 @@ export default function App() {
         {/* 
           Hero Section:
           Fundo preto, lado direito pizzaiolo, lado esquerdo texto,
-          links e logo integrados diretamente na hero separados por um traço.
-          Ao descer a página, transiciona para estilo claro.
-          Sem ícones nos botões, título com Syne normal (sem achatar).
+          links e logo integrados diretamente na hero.
         */}
-        <Hero onOrderClick={handleOpenWhatsApp} />
+        <Hero onOrderClick={handleOpenDigitalMenu} />
 
         {/* 
           Compromisso com a sua mesa:
@@ -50,7 +48,7 @@ export default function App() {
           Fermentação 48h, Tomates San Marzano, Catupiry® Legítimo,
           Queijos e embutidos nobres.
         */}
-        <IngredientsSection onOrderClick={handleOpenWhatsApp} />
+        <IngredientsSection onOrderClick={handleOpenDigitalMenu} />
 
         {/* 
           Conceito da Marca:
@@ -60,9 +58,9 @@ export default function App() {
 
         {/* 
           Localização e Atendimento:
-          Praia do Sonho, Palhoça / SC e pedidos via WhatsApp.
+          Praia do Sonho, Palhoça / SC.
         */}
-        <LocationSection onOrderClick={handleOpenWhatsApp} />
+        <LocationSection onOrderClick={handleOpenDigitalMenu} />
       </main>
 
       {/* Footer com logo oficial sem slogan e piso paulista */}

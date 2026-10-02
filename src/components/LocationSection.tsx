@@ -80,12 +80,6 @@ export default function LocationSection({ onOrderClick }: LocationSectionProps) 
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => {
-                  if (onOrderClick) {
-                    e.preventDefault();
-                    onOrderClick();
-                  }
-                }}
                 className="font-size-body inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-full font-bold tracking-wide transition-all duration-200 shadow-lg shadow-[#25D366]/25 active:scale-95 cursor-pointer w-full sm:w-80 text-center"
               >
                 Chamar no WhatsApp

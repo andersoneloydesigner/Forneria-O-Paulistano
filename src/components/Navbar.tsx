@@ -1,6 +1,6 @@
 import { useState, useEffect, type MouseEvent } from 'react';
 import { Menu, X } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { DIGITAL_MENU_LINK } from '../constants';
 
 interface NavbarProps {
   onOrderClick?: () => void;
@@ -91,11 +91,11 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
             ))}
           </div>
 
-          {/* Desktop CTA Action Button (strictly NO icon as requested: 'tire o ícone dos botões') */}
+          {/* Desktop CTA Action Button */}
           <div className="hidden md:flex items-center">
             <a
               id="navbar-order-btn"
-              href={WHATSAPP_LINK}
+              href={DIGITAL_MENU_LINK}
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleOrder}
@@ -115,7 +115,7 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
           <div className="flex md:hidden items-center gap-3">
             <a
               id="mobile-nav-order-btn"
-              href={WHATSAPP_LINK}
+              href={DIGITAL_MENU_LINK}
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleOrder}
@@ -163,7 +163,7 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
           ))}
           <a
             id="mobile-dropdown-order-btn"
-            href={WHATSAPP_LINK}
+            href={DIGITAL_MENU_LINK}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
@@ -171,7 +171,7 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
             }}
             className="w-full mt-4 font-size-body flex items-center justify-center bg-[#ff4d4d] hover:bg-[#e63939] text-[#f9f8ed] py-3 rounded-full font-bold tracking-wide cursor-pointer text-center"
           >
-            Fazer Pedido via WhatsApp
+            Acessar Cardápio Digital
           </a>
         </div>
       )}
